@@ -63,18 +63,9 @@ function App(props) {
       </Navbar>
 
       {/* Render the routed page */}
-      <Routes appProps={{isAuthenticated, userHasAuthenticated}} />
+      <Routes appProps={{ isAuthenticated, userHasAuthenticated }} />
     </div>
   );
 }
 
-/*
-function App() {
-  return (
-    <div className="App container">
-      <Routes />
-    </div>
-  );
-}
-*/
 export default withRouter(App);
